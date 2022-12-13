@@ -1,32 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&display=swap');
 
 :root{
-    $header-height: 3rem;
+    --header-height: 3rem;
 
     /*===== Colors =======*/
-    $hue: 18;
-    $sat: 98%;
-    $first-color: hsl(var(--hue), (--sat), 50%);
-    $first-color-light: hsl(var(--hue), (--sat), 85%);
-    $first-color-lighten: hsl(var(--hue), (--sat), 80%);
-    $first-color-alt: hsl(var(--hue), (--sat), 43%);
-    $title-color: hsl(var(--hue), 4%, 15%);
-    $text-color: hsl(var(--hue), 4%, 35%);
-    $text-color-light: hsl(var(--hue), 4%, 65%);
-    $body-color: hsl(var(--hue), 0%, 100%);
-    $container-color: #fff;
-    $scroll-bar-color: hsl(var(--hue), 4%, 85%);
-    $scroll-thumb-color: hsl(var(--hue), 4%, 75%);
+    --hue: 18;
+    --sat: 98%;
+    --first-color: hsl(var(--hue), (--sat), 50%);
+    --first-color-light: hsl(var(--hue), (--sat), 85%);
+    --first-color-lighten: hsl(var(--hue), (--sat), 80%);
+    --first-color-alt: hsl(var(--hue), (--sat), 43%);
+    --title-color: hsl(var(--hue), 4%, 15%);
+    --text-color: hsl(var(--hue), 4%, 35%);
+    --text-color-light: hsl(var(--hue), 4%, 65%);
+    --body-color: hsl(var(--hue), 0%, 100%);
+    --container-color: #fff;
+    --scroll-bar-color: hsl(var(--hue), 4%, 85%);
+    --scroll-thumb-color: hsl(var(--hue), 4%, 75%);
 
 
     /*===== Font and typography =======*/
 
-    $body-font: 'Poppins', sans-serif;
+    --body-font: 'Poppins', sans-serif;
 
-    $biggest-font-size: 2rem; //32px
-    $h2-font-size: 1.25rem; //20px
-    $h3-font-size: 1.125rem; //18/px
-    $normal-font-size: .938rem; //15px
-    $small-font-size: .813rem; //13px
-    $smaller-font-size: .75rem; //12px
+    --biggest-font-size: 2rem; //32px
+    --h2-font-size: 1.25rem; //20px
+    --h3-font-size: 1.125rem; //18px
+    --normal-font-size: .938rem; //15px
+    --small-font-size: .813rem; //13px
+    --smaller-font-size: .75rem; //12px
+
+    /*===== Responsive typography =======*/
+    @media screen and (min-width: 968px){
+        --biggest-font-size: 3rem; //48px
+        --h2-font-size: 1.75rem; //28px
+        --h3-font-size: 1.25rem; //20px
+        --normal-font-size: 1rem; //16px
+        --small-font-size: .875rem; //14px
+        --smaller-font-size: .813rem; //13px
+    }
+
+    /*===== Font weight =======*/
+    --font-semi-bold: 600; 
+    --font-bold: 700; 
+
+
+    /*===== Margenes =======*/
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: .75rem;
+    --mb-2: 2rem;
+
+    /*===== Z index =======*/
+    --tooltip: 10;
+    --z-fixed: 100;
 }
