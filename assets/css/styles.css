@@ -183,6 +183,7 @@ img {
 .home__img {
   width: 300px;
   justify-self: center;
+  object-fit: cover;
 }
 
 .about__container {
