@@ -1,0 +1,15 @@
+.about{
+
+    &__container{
+        gap: 1rem;
+    }
+
+
+    &__data{
+        text-align: center;
+    }
+
+    &__title{
+        margin-bottom: var(--mb-0-75);
+    }
+}

@@ -1,7 +1,23 @@
 /*===== LAYOUT =======*/
 
+.section{
+    padding: 4.5rem 0 1rem;
+
+    &__title, &__title-center{
+        font-size: var(--h2-font-size);
+        color: var(--title-color);
+        text-align: center;
+        margin-bottom: var(--mb-1);
+    }
+}
+
 .container{
     max-width: 968px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
 }
