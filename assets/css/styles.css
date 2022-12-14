@@ -8,7 +8,7 @@
   --first-color-light: hsl(var(--hue), (--sat), 85%);
   --first-color-lighten: hsl(var(--hue), (--sat), 80%);
   --first-color-alt: hsl(var(--hue), (--sat), 43%);
-  --title-color: hsl(var(--hue), 4%, 15%);
+  --title-color: hsl(4, 98%, 10%);
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 65%);
   --body-color: hsl(var(--hue), 0%, 100%);
@@ -90,6 +90,68 @@ img {
   max-width: 968px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    width: 90%;
+    top: -100%;
+    right: 0;
+    left: 0;
+    background-color: var(--container-color);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    border-radius: 2rem;
+    padding: 2.5rem 0;
+    z-index: var(--z-fixed);
+    transition: 0.4s;
+  }
+}
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+.nav__logo, .nav__title, .nav__link, .nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+.nav__toggle {
+  font-size: 1.3rem;
+}
+.nav__logo {
+  font-size: 1.5rem;
+}
+.nav__logo, .nav__toggle, .nav__title {
+  cursor: pointer;
+}
+.nav__title:hover {
+  color: #fc4e03;
+}
+
+/*===== SHOW MENU =======*/
+.show-menu {
+  top: calc(var(--header-height) + 1rem);
+}
+
+.button__header {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
