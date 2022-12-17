@@ -62,14 +62,81 @@
             </div>
         </section>
 
+        <!--============================== ABOUT =================================-->
         <section class="about section container" id="about">
             <div class="about__container grid">
                 <div class="about__data">
-                    <h2 class="about__title">Coffee Cat</h2>
-                    <p class="about__description">Somos una cafeteria que oferece diferente tipos de cafes y aperitivos, siempre caracterizandonos por la buena calidad de nuestros productos.</p>
+                    <h2 class="about__title">About us</h2>
+                    <p class="about__description">We are a cafeteria that offers different types of coffees and snacks, always characterized by the good quality of our products.</p>
                 </div>
 
-                <img class="about-img" src="./assets/img/about-logo.png" alt="about image">
+                <img class="about__img" src="./assets/img/logo1.png" alt="about image">
+            </div>
+        </section>
+
+        <!--============================== PRODUCTS =================================-->
+        <section class="products section container" id="products">
+            <div class="products__container grid">
+                <div class="products__data">
+                    <h2 class="products__title-center">Products</h2>
+                    <h3 class="products__subtitle">Top Selling Products</h3>
+                </div>
+
+                <div class="carousel">
+                    <ul class="carousel__slides">
+                        <input class="slides__inputs" type="radio" name="radio-buttons" id="img-1" checked>
+
+                        <li class="slides__slide-container">
+                            <div class="slides__slide-image">
+                                <img class="slides__image" src="./assets/img/img_1.jpg" alt="">
+                            </div>
+
+                            <div class="slides__carousel-controls">
+                                <label for="img-3" class="slides__label slides__prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-2" class="slides__label slides__next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+
+                        <input class="slides__inputs" type="radio" name="radio-buttons" id="img-2">
+                        <li class="slides__slide-container">
+                            <div class="slides__slide-image">
+                                <img class="slides__image" src="./assets/img/img_2.jpg" alt="">
+                            </div>
+                            <div class="slides__carousel-controls">
+                                <label for="img-1" class="slides__label slides__prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-3" class="slides__label slides__next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+
+                        <input class="slides__inputs" type="radio" name="radio-buttons" id="img-3">
+                        <li class="slides__slide-container">
+                            <div class="slides__slide-image">
+                                <img class="slides__image" src="./assets/img/img_3.jpg" alt="">
+                            </div>
+                            <div class="slides__carousel-controls">
+                                <label for="img-2" class="slides__label slides__prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-1" class="slides__label slides__next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <div class="slides__carousel-dots">
+                            <label for="img-1" class="slides__carousel-dot" id="img-dot-1"></label>
+                            <label for="img-2" class="slides__carousel-dot" id="img-dot-2"></label>
+                            <label for="img-3" class="slides__carousel-dot" id="img-dot-3"></label>
+                        </div>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>

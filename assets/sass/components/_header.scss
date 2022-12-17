@@ -3,6 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    background-color: var(--body-color);
     z-index: var(--z-fixed);
 }
 
@@ -60,7 +61,7 @@
     }
 
     &__title:hover{
-        color: #fc4e03;
+        color: #ff914d;
     }
 
 }
