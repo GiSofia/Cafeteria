@@ -7,7 +7,7 @@
     &__slides{
         display: block;
         position: relative;
-        height: 600px;
+        height: 250px;
         margin: 0;
         padding: 0;
         overflow: hidden;
@@ -46,6 +46,7 @@
         width: auto;
         min-width: 100%;
         height: auto;
+        border-radius: .3rem;
     }
 
     &__carousel-controls{
@@ -55,8 +56,8 @@
         right: 0;
         z-index: 999;
         font-size: 50px;
-        line-height: 180px;
-        color: #000;
+        line-height: 150px;
+        color: #fff;
     }
 
     &__label{
@@ -93,7 +94,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        top: 140px;
+        top: 125px;
         z-index: 999;
         text-align: center;
     }

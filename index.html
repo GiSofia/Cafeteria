@@ -82,6 +82,8 @@
                     <h3 class="products__subtitle">Top Selling Products</h3>
                 </div>
 
+                <!--============ CAROUSEL ============-->
+
                 <div class="carousel">
                     <ul class="carousel__slides">
                         <input class="slides__inputs" type="radio" name="radio-buttons" id="img-1" checked>
@@ -137,9 +139,215 @@
                         </div>
                     </ul>
                 </div>
+
+                <!--============ PRODUCTS FILTERS ============-->
+                <ul class="products__filters container">
+                    <li class="products__item products__line active-product"  data-filter=".all">
+                        <h3 class="products__title-filters">All</h3>
+                        <span class="products__stock">6 products</span>
+                    </li>
+
+                    <li class="products__item products__line" data-filter=".coffee">
+                        <h3 class="products__title-filters">Coffee</h3>
+                        <span class="products__stock">4 products</span>
+                    </li>
+
+                    <li class="products__item" data-filter=".snacks">
+                        <h3 class="products__title-filters">Snack</h3>
+                        <span class="products__stock">2 products</span>
+                    </li>
+                </ul>
+
+                <div class="products__content container grid">
+                    <!--========== ALL PRODUCTS ==========-->
+                    <article class="products__card all">
+                        <div class="products__shape">
+                            <img src="./assets/img/delicacies1.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data-card">
+                            <h2 class="products__price">$4</h2>
+                            <h3 class="products__name">Cookies</h3>
+
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card all">
+                        <div class="products__shape">
+                            <img src="./assets/img/coffee1.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data-card">
+                            <h2 class="products__price">$7</h2>
+                            <h3 class="products__name">Moka Coffee</h3>
+
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card all">
+                        <div class="products__shape">
+                            <img src="./assets/img/cake1.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data-card">
+                            <h2 class="products__price">$9</h2>
+                            <h3 class="products__name">Cherry Cake</h3>
+
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card all">
+                        <div class="products__shape">
+                            <img src="./assets/img/delicacies2.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data-card">
+                            <h2 class="products__price">$8</h2>
+                            <h3 class="products__name">Croissant</h3>
+
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card all">
+                        <div class="products__shape">
+                            <img src="./assets/img/coffee2.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data-card">
+                            <h2 class="products__price">$12</h2>
+                            <h3 class="products__name">American Coffee</h3>
+
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card all">
+                        <div class="products__shape">
+                            <img src="./assets/img/cake3.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data-card">
+                            <h2 class="products__price">$13</h2>
+                            <h3 class="products__name">Pancake</h3>
+
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!--============ COFFEE ============-->
+                    <article class="products__card coffee">
+                        <div class="products__shape">
+                            <img src="./assets/img/coffee1.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data-card">
+                            <h2 class="products__price">$7</h2>
+                            <h3 class="products__name">Classic</h3>
+
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+                    
+                    <article class="products__card coffee">
+                        <div class="products__shape">
+                            <img src="./assets/img/coffee2.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data-card">
+                            <h2 class="products__price">$12</h2>
+                            <h3 class="products__name">Moka</h3>
+
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card coffee">
+                        <div class="products__shape">
+                            <img src="./assets/img/coffee3.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data-card">
+                            <h2 class="products__price">$12</h2>
+                            <h3 class="products__name">Capuccino</h3>
+
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card coffee">
+                        <div class="products__shape">
+                            <img src="./assets/img/coffee4.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data-card">
+                            <h2 class="products__price">$10</h2>
+                            <h3 class="products__name">Espresso</h3>
+
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!--============ SNACK ============-->
+                    <article class="products__card snacks">
+                        <div class="products__shape">
+                            <img src="./assets/img/delicacies3.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data-card">
+                            <h2 class="products__price">$5</h2>
+                            <h3 class="products__name">Pretzel</h3>
+
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card snacks">
+                        <div class="products__shape">
+                            <img src="./assets/img/cake4.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data-card">
+                            <h2 class="products__price">$13</h2>
+                            <h3 class="products__name">Chocolate Cake</h3>
+
+                            <button class="products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
+
+    <!--========================== MIXITUP FILTER =====================-->
+    <script src="./assets/js/mixitup.min.js"></script>
 
     <!--============================== JS =================================-->
     <script src="./assets/js/main.js"></script>
